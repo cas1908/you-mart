@@ -8,20 +8,7 @@ export default {
     const product = ref(productId);
     const item = ref([]);
     const dataIsFetched = ref(false);
-    // setTimeout(() => {
-    //   product.value = productId();
-    //   console.log(productId());
-    // }, 10000);
     console.log(product);
-    // try {
-    //   const res = await axios.get("https://dummyjson.com/products/" + product);
-    //   console.log(res.data);
-    //   item.value = res.data;
-    //   dataIsFetched.value = true;
-    //   console.log(item);
-    // } catch (error) {
-    //   console.log(error.message);
-    // }
 
     return { item, product, dataIsFetched, productId };
   },
@@ -58,4 +45,9 @@ export default {
 </script>
 <template>
   {{ dataIsFetched ? item.title : "Loading...." }}
+  <main>
+    <section class="product-info-section"></section>
+    <section class="product-gallery-section"></section>
+    <section class="product-details-section"></section>
+  </main>
 </template>
