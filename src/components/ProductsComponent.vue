@@ -38,7 +38,7 @@ export default {
       >
         <div class="product-list w-[95%] py-5 flex flex-wrap justify-between">
           <div
-            class="product flex flex-col my-2 gap-5 bg-white/50 border border-solid border-white/50 rounded-xl shadow-xl shadow-gray-300 w-[48%] bg-clip-padding backdrop-blur-xl h-[200px] pt-3 md:w-1/3 lg:w-1/4 xl:w-1/5]"
+            class="product flex flex-col my-2 gap-5 bg-white/50 border border-solid border-white/50 rounded-xl shadow-xl -shadow-xl shadow-gray-300 w-[48%] bg-clip-padding backdrop-blur-xl h-[200px] pt-3 md:w-1/3 lg:w-1/4 xl:w-1/5]"
             v-for="product in products"
             :key="product.id"
             @click="productId(product.id)"
