@@ -7,7 +7,7 @@
         class="absolute w-[90%] min-[500px]:w-[70%] sm:w-[90%] md:w-1/2 h-[450px]"
       >
         <div
-          class="font-medium absolute top-2 md:top-20 w-[90%] sm:w-3/5 md:w-[90%] lg:w-[75%] min-[1200px]:w-3/5 xl:left-5"
+          class="font-medium absolute top-2 md:top-20 w-[90%] sm:w-3/5 md:w-[85%] lg:w-[75%] min-[1200px]:w-[55%] xl:left-5"
         >
           <h1 class="text-5xl font-bold text-[#1f1f1f] text-left p-4 pr-2">
             Welcome to You-Mart
@@ -17,7 +17,7 @@
             just one click.
           </p>
           <button
-            class="absolute left-4 xl:left-3 -bottom-16 bg-[#1f1f1f] text-white w-[35%] py-3 rounded-3xl"
+            class="absolute left-4 xl:left-3 -bottom-16 bg-[#1f1f1f] text-white w-[35%] py-3 rounded-3xl hover:bg-black"
           >
             Shop now
           </button>
@@ -50,7 +50,9 @@
         </p>
       </div>
     </section> -->
-    <section class="bg-white -mt-5 relative rounded-t-[30px] z-30">
+    <section
+      class="bg-white -mt-5 relative rounded-t-[30px] z-30 min-h-[700px]"
+    >
       <h2 class="text-[#0155b7] relative top-24 font-semibold text-3xl">
         Features
         <span
