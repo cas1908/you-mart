@@ -1,12 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: () => import("../views/HomeView.vue"),
   },
   {
     path: "/products",
@@ -76,7 +75,7 @@ router.beforeEach(async (to, from, next) => {
       next();
     } else {
       alert("you don't have access");
-      next("/signin");
+      next("/login");
     }
   } else next();
 });

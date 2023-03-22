@@ -51,14 +51,16 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col items-center">
-    <div class="font-medium mb-10">
+  <div
+    class="flex flex-col items-center mx-auto mt-20 w-[80%] md:w-1/2 xl:w-[35%] border border-solid border-white bg-white shadow-lg shadow-white-400 p-10"
+  >
+    <div class="font-medium mb-2">
       <h1 class="text-3xl tracking-wider mb-1">Create an account</h1>
       <p class="text-sm font-medium">Enter your details to continue</p>
     </div>
     <form
       @submit.prevent="Register"
-      class="flex flex-col items-center w-[80%] md:w-1/2 border border-solid border-white shadow-lg shadow-white-400 gap-4 py-6 my-4 mt-8"
+      class="flex flex-col items-center gap-4 py-6 my-4 mt-8"
     >
       <section class="flex justify-between w-[90%]">
         <input

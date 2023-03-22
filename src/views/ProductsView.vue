@@ -3,6 +3,10 @@
     <div class="products">
       <router-view />
     </div>
-    <template #fallback>yet to load...</template>
+    <template #fallback>
+      <div class="mt-20">
+        <img src="@/assets/loader.gif" alt="loader gif" class="m-auto" />
+      </div>
+    </template>
   </Suspense>
 </template>
