@@ -13,7 +13,7 @@ export default {
         largeScreen.value = false;
       });
     };
-    const largeScreen = ref(true);
+    const largeScreen = ref(false);
     return { isLoggedIn, router, largeScreen, logOut };
   },
   mounted() {
@@ -41,14 +41,14 @@ export default {
     >
       <div
         @click="() => (largeScreen = !largeScreen)"
-        class="absolute right-6 top-6 flex flex-col justify-center gap-1 max-[760px]:w-[35px] border-[#1f1f1f] border-solid h-[25px]"
+        class="absolute right-6 top-6 flex flex-col justify-center gap-1 max-[760px]:w-[25px] border-[#1f1f1f] border-solid h-[25px]"
       >
         <span class="border-[#1f1f1f] border-t-[3px] w-full"></span>
         <span class="border-[#1f1f1f] border-t-[3px] w-full"></span>
         <span class="border-[#1f1f1f] border-t-[3px] w-full"></span>
       </div>
       <div
-        :class="largeScreen ? 'flex' : 'hidden'"
+        :class="largeScreen ? 'flex' : 'max-[760px]:hidden'"
         class="w-full flex md:justify-between md:items-center max-[760px]:flex-col max-[760px]:justify-end mt-10 md:mt-0 max-[760px]:gap-10"
       >
         <div class="flex gap-10 max-[760px]:flex-col max-[760px]:gap-4">

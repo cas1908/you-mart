@@ -16,11 +16,12 @@
             You-Mart offers the best online shopping experience and products at
             just one click.
           </p>
-          <button
+          <router-link
+            to="/products"
             class="absolute left-4 xl:left-3 -bottom-16 bg-[#1f1f1f] text-white w-[35%] py-3 rounded-3xl hover:bg-black"
           >
             Shop now
-          </button>
+          </router-link>
         </div>
 
         <p
@@ -123,8 +124,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
