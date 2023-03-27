@@ -93,7 +93,7 @@ export default {
       </div>
     </nav>
     <h2
-      class="flex flex-col justify-center items-start pl-6 pb-10 w-1/5 sm:w-[12%] md:w-[10%] lg:w-[8%] xl:w-[7%] rounded-full bg-white absolute -bottom-6 md:left-[45%] xl:left-[47%] z-40 border border-solid border-white shadow-sm text-5xl max-[760px]:text-3xl md:text-4xl font-bold text-[#1f1f1f]"
+      class="flex flex-col justify-center items-start pl-6 pb-10 w-1/5 sm:w-[12%] md:w-[10%] lg:w-[8%] xl:w-[7%] rounded-full bg-white absolute -bottom-6 md:left-[45%] xl:left-[47%] z-40 border border-solid border-white shadow-sm text-5xl max-[760px]:text-3xl md:text-4xl font-bold text-[#fed74c]"
     >
       <span class="relative top-4 lg:top-3 -left-2 lg:-left-1">Y</span
       ><span

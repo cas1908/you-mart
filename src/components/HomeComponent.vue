@@ -64,33 +64,33 @@
         class="featured-product-section w-[90%] min-h-full flex flex-wrap gap-10 justify-center md:justify-evenly mx-auto py-32 md:p-12 md:my-24 xl:justify-between"
       >
         <div
-          class="relative lg:top-32 border border-white shadow-lg backdrop-blur-sm bg-white p-8 text-center w-4/5 md:w-1/3 lg:w-[33%] xl:w-[30%]"
+          class="relative lg:top-32 flex border border-white shadow-lg backdrop-blur-sm bg-white p-6 text-center w-[90%] md:w-1/3 lg:w-[33%] xl:w-[30%]"
         >
-          <img src="" alt="" />
+          <img :src="shampoo" class="w-1/3" alt="shampoo icon" />
           <p>
             Explore products from various categories such as electronics,
             fashion, beauty, home and garden, and more
           </p>
         </div>
         <div
-          class="border relative left-8 md:left-0 border-white shadow-lg backdrop-blur-sm bg-white p-8 text-center w-3/4 md:w-1/3 lg:w-[30%]"
+          class="border relative left-4 md:left-0 flex border-white shadow-lg backdrop-blur-sm bg-white p-6 text-center w-[90%] md:w-1/3 lg:w-[30%]"
         >
-          <img src="" alt="" />
+          <img :src="checked" class="w-1/3" alt="checked mark icon" />
           <p>
             Buy with confidence from trusted seller who have been thoroughly
             vetted and verified
           </p>
         </div>
         <div
-          class="border relative -left-5 md:left-12 lg:left-0 lg:top-32 border-white shadow-lg backdrop-blur-sm bg-white p-8 text-center w-3/4 md:w-1/3 lg:w-1/4"
+          class="border relative -left-3 md:left-12 lg:left-0 lg:top-32 flex border-white shadow-lg backdrop-blur-sm bg-white p-6 text-center w-[90%] md:w-1/3 lg:w-1/4"
         >
-          <img src="" alt="" />
+          <img :src="ebookreader" class="w-1/3" alt="ebook reader icon" />
           <p>Enjoy hassle-free shopping with our easy-to-use interface</p>
         </div>
         <div
-          class="border relative left-8 top-5 mx-auto border-white shadow-lg backdrop-blur-sm bg-white p-8 text-center w-3/4 md:w-1/3 lg:w-[30%]"
+          class="border relative left-4 top-5 mx-auto flex border-white shadow-lg backdrop-blur-sm bg-white p-6 text-center w-[90%] md:w-1/3 lg:w-[30%]"
         >
-          <img src="" alt="" />
+          <img :src="consultation" class="w-1/3" alt="consultation icon" />
           <p>
             Get in touch with our friendly customer support team 24/7 for any
             queries or issues
@@ -99,15 +99,24 @@
       </section>
     </section>
   </main>
-  <!-- <footer>
-    You-mart Your one stop destination for all your shopping needs.
-  </footer> -->
+  <Footer />
 </template>
 
 <script>
+import shampoo from "@/assets/icons/shampoo.svg";
+import consultation from "@/assets/icons/consultation.svg";
+import checked from "@/assets/icons/checked.svg";
+import ebookreader from "@/assets/icons/ebook-reader.svg";
+import Footer from "./FooterComponent.vue";
 export default {
+  components: {
+    Footer: Footer,
+  },
   props: {
     msg: String,
+  },
+  setup() {
+    return { shampoo, consultation, checked, ebookreader };
   },
 };
 </script>
